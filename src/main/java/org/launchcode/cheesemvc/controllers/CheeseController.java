@@ -5,10 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
+@RequestMapping("cheese")
 public class CheeseController {
 
+    // Request path: /cheese
     @RequestMapping(value="")
     public String index() {
-        return "index";
+        return "cheese/index";
     }
 }
